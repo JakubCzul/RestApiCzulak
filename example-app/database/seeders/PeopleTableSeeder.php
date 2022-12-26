@@ -19,10 +19,10 @@ class PeopleTableSeeder extends Seeder
             People::create([
                 'name' => $faker->firstName,
                 'surname' => $faker->lastName,
-                'phonenum' => $faker->phoneNumber,
+                'e-mail' => $faker->email,
                 'street' => $faker->streetAddress,
                 'city' => $faker->city,
-                'country' => $faker->country
+                'house number' => $faker->numberBetween($min = 1, $max = 1000),
             ]);
         }
     }
