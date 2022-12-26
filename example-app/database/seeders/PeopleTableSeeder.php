@@ -9,11 +9,6 @@ use Illuminate\Support\Facades\DB;
 
 class PeopleTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run(): void
     {
         DB::table('people')->delete();
