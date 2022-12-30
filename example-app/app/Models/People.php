@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class people extends Model
 {
+    protected $fillable = ['NAME','SURNAME','TELEPHONE','STREET','CITY','COUNTRY'];
+
+    protected $table = 'people';
+
     use HasFactory;
-    protected $fillable = ['name', 'surname', 'phonenum', 'street', 'city', 'country'];
 }
